@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@500&family=Quicksand:wght@300;600&display=swap');
 
+
 * {
     box-sizing: border-box;
     font-family: Quicksand, sans-serif;
@@ -33,22 +34,24 @@ html {
     padding: 15px 20px;
 }
 
+.logo {
+    display: inline-block;
+}
+
 .logo img {
     width: 35px;
     height: 35px;
     border-radius: 100%;
     margin-right: 10px;
-
+    margin-bottom: 20px;
 }
 
 .container-header header .logo a {
-    font-family: Quicksand, sans-serif;
-    font-size: 40px;
+    font-family: Oswald, sans-serif;
+    font-size: 34px;
     font-weight: bold;
     color: tomato;
     text-decoration: none;
-    top: 0;
-    left: 0;
 }
 
 .container-header header .logo a>span,
@@ -187,7 +190,7 @@ small:hover {
 
 .sobremi h2 {
     font-size: 48px;
-    font-family: Quicksad, sans-serif;
+    font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 40px;
@@ -316,7 +319,7 @@ small:hover {
 
 .skills h2 {
     font-size: 48px;
-    font-family: Quicksad, sans-serif;
+    font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 40px;
@@ -539,7 +542,7 @@ small:hover {
 
 .resume h2 {
     font-size: 48px;
-    font-family: Quicksad, sans-serif;
+    font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 40px;
@@ -672,7 +675,7 @@ small:hover {
 
 .portfolio h2 {
     font-size: 48px;
-    font-family: Quicksad, sans-serif;
+    font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
@@ -698,12 +701,6 @@ small:hover {
     display: block;
 }
 
-/*.portfolio .galeria .proyecto .carousel:hover{
-    transform: scale(1.5);
-    z-index: 1;
-    transition: all 1s ease-in-out;
-}
-*/
 
 .portfolio .galeria .proyecto .overlay {
     position: absolute;
@@ -753,7 +750,7 @@ small:hover {
 
 .contacto h2 {
     font-size: 49px;
-    font-family: Quicksand, sans-serif;
+    font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
@@ -771,8 +768,7 @@ small:hover {
     position: relative;
 }
 
-.contacto .col input,
-.contacto .col textarea {
+.contacto .col input, .contacto .col textarea {
     display: block;
     width: 100%;
     padding: 18px;
@@ -783,6 +779,9 @@ small:hover {
     font-size: 18px;
     border-radius: 5px;
 
+}
+.contacto .col input::placeholder, .contacto .col textarea::placeholder {
+    color: #fff;
 }
 
 .contacto button {
@@ -840,6 +839,7 @@ small:hover {
 
 .contacto .col .info ul li {
     margin-bottom: 20px;
+    
 }
 
 .contacto .col .info ul li i {
