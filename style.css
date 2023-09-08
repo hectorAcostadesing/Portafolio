@@ -16,27 +16,39 @@ html {
 }
 
 .container-header {
-    background: #1e2326;
+    /*background: linear-gradient(to top, rgb(26, 26, 52), rgb(26,26,52));*/
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 99;
-    box-shadow: 0px 0px 10px #374045;
+    z-index: 10;
+   /* box-shadow: 0px 0px 10px #374045;*/
+    margin: 0px 0px;
+    transition: 1.5s;
+    padding: 0px 0px;
+}
+
+.container-header .abajo{
+    background: linear-gradient(to top, rgb(26, 26, 52), rgb(26,26,52));
+    /*box-shadow: 0px 0px 10px #374045;*/
+    height: 50px;
+    transition:all 1s;
 }
 
 .container-header header {
-    max-width: 1300px;
+    max-width: 100%px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 15px;
+    margin-top: 0;
+
 }
 
-.logo {
+/*.logo {
     display: inline-block;
-}
+}*/
 
 .logo img {
     width: 35px;
@@ -50,9 +62,10 @@ html {
     font-family: Oswald, sans-serif;
     font-size: 34px;
     font-weight: bold;
-    color: tomato;
+    color: rgb(218, 11, 60);
     text-decoration: none;
 }
+
 
 .container-header header .logo a>span,
 small {
@@ -61,8 +74,7 @@ small {
 
 .container-header header .logo a>span:hover,
 small:hover {
-    color: tomato;
-    transition: .5s;
+    color: rgb(218, 11, 60);
 }
 
 .container-header header ul {
@@ -76,17 +88,17 @@ small:hover {
     color: #fff;
     margin: 0 15px;
     padding: 3px;
-    transition: .5s;
     font-size: 18px;
-    font-style: unset;
+    font-weight: bold;
+    transition: 1s;
 }
 
 .container-header header nav ul li a:hover {
-    color: #e93a00;
+    color: rgb(218, 11, 60);
 }
 
 .nav-responsive {
-    background-color: #e93a00;
+    background-color: rgb(218, 11, 60);
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -95,7 +107,7 @@ small:hover {
 }
 
 .inicio {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, .8)), url(./asset/imagenes/imagen5);
+    background: linear-gradient(to top, rgba(55, 43, 113, .8), rgba(55, 47, 113, 0.8)), url(./asset/imagenes/imagen5);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -120,8 +132,8 @@ small:hover {
 }
 
 .contenido-banner:hover {
-    background: #252a2e;
-
+    /*background: #252a2e;*/
+    background: rgb(18, 18, 56);
 }
 
 .contenido-banner img {
@@ -137,11 +149,8 @@ small:hover {
 }
 
 .contenido-banner img:hover {
-    border-radius: 10px;
-    height: 250px;
-    width: 300px;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 15px #889fab;
+    
+    box-shadow: 0px 0px 15px #fff;
 
 }
 
@@ -178,7 +187,7 @@ small:hover {
 }
 
 .sobremi {
-    background: #1e2326;
+    background: linear-gradient(to top, rgba(37, 34, 52, 0.8), rgba(25, 23, 37, 0.8)), url(/asset/imagenes/seccion3.avif);
     color: #fff;
     padding: 50px 20px;
 }
@@ -189,7 +198,7 @@ small:hover {
 }
 
 .sobremi h2 {
-    font-size: 48px;
+    font-size: 80px;
     font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -204,7 +213,7 @@ small:hover {
 }
 
 .contenido-seccion p span {
-    color: tomato;
+    color: rgb(218, 11, 60);
     font-weight: bold;
 }
 
@@ -234,13 +243,13 @@ small:hover {
 
 .col ul li strong {
     display: inline-block;
-    color: tomato;
+    color: rgb(218, 11, 60);
     width: 130px;
 
 }
 
 .col ul li span {
-    background-color: #e93a00;
+    background-color: rgb(218, 11, 60);
     padding: 3px;
     font-weight: bold;
     border-radius: 5px;
@@ -262,11 +271,12 @@ small:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: .3s;
+    transition: all 1s ease-in-out;
 }
 
 .intereses:hover {
-    background-color: tomato;
+    background-color: rgb(218, 11, 60);
+    box-shadow: 0px 0px 15px #fff;
 }
 
 .intereses i {
@@ -296,7 +306,7 @@ small:hover {
     right: 0;
     width: 0;
     height: 100%;
-    background-color: tomato;
+    background-color: rgb(218, 11, 60);
     z-index: -1;
     transition: 1s;
 }
@@ -306,9 +316,10 @@ small:hover {
 }
 
 .skills {
-    background: #252a2e;
+    background: linear-gradient(to top, rgba(55, 43, 113, .8), rgba(55, 47, 113, 0.8)), url(/asset/imagenes/footer.jpeg);
     color: #fff;
     padding: 50px 20px;
+    background-size: cover;
 
 }
 
@@ -318,7 +329,7 @@ small:hover {
 }
 
 .skills h2 {
-    font-size: 48px;
+    font-size: 80px;
     font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -357,24 +368,27 @@ small:hover {
 }
 
 .skill .progreso {
-    background-color: tomato;
+    background-color: rgb(218, 11, 60);
     position: absolute;
     top: 0;
     left: 0;
     height: 8px;
+    box-shadow: 0px 0px 15px #ccc;
 }
 
 .skill .barra-skill span {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: tomato;
+    background-color: rgb(218, 11, 60);
     border-radius: 50px;
     line-height: 49px;
     text-align: center;
     top: -17px;
     right: -15px;
     font-size: 14px;
+    box-shadow: 0px 0px 15px #ccc;
+
 }
 
 .skills .skill .htmlcss {
@@ -528,10 +542,11 @@ small:hover {
 }
 
 .resume {
-    background: #1e2326;
+    background: linear-gradient(to top, rgba(48, 44, 66, 0.8), rgba(43, 40, 63, 0.8)), url(/asset/imagenes/seccion2.jpg);
     color: #fff;
     padding: 50px 20px;
     justify-content: center;
+    background-size: cover;
 
 }
 
@@ -541,7 +556,7 @@ small:hover {
 }
 
 .resume h2 {
-    font-size: 48px;
+    font-size: 80px;
     font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -576,8 +591,9 @@ small:hover {
 .resume .fila .item {
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252a2e;
+    background: linear-gradient(to top, rgba(49, 36, 53, 0.8), rgba(59, 43, 68, 0.8));
     position: relative;
+    box-shadow: 0px 0px 15px #ccc;
 }
 
 .resume .fila .item h4 {
@@ -586,14 +602,14 @@ small:hover {
 }
 
 .resume .fila .item .escuela {
-    color: tomato;
+    color: rgb(218, 11, 60);
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
 
 .resume .fila .item .empresa {
-    color: tomato;
+    color: rgb(218, 11, 60);
     font-size: 22px;
     font-weight: bold;
     display: block;
@@ -601,7 +617,7 @@ small:hover {
 
 .resume .fila .item .fecha {
     display: block;
-    color: tomato;
+    color: rgb(218, 11, 60);
     margin-bottom: 10px;
 }
 
@@ -610,18 +626,18 @@ small:hover {
 }
 
 .resume .fila .izq {
-    border-right: 2px solid #e93a00;
+    border-right: 2px solid rgb(26, 26, 52);
     margin-right: 20px;
 }
 
 .resume .fila .der {
-    border-left: 2px solid #e93a00;
+    border-left: 2px solid rgb(26, 26, 52);
     margin-left: 20px;
 }
 
 .resume .fila .item .conectori {
     height: 2px;
-    background-color: #e93a00;
+    background-color: rgb(26, 26, 52);
     width: 47px;
     position: absolute;
     top: 50%;
@@ -633,7 +649,7 @@ small:hover {
     display: block;
     height: 10px;
     width: 10px;
-    background-color: #e93a00;
+    background-color: rgb(26, 26, 52);
     float: right;
     border-radius: 50px;
     position: relative;
@@ -642,7 +658,7 @@ small:hover {
 
 .resume .fila .item .conectord {
     height: 2px;
-    background-color: #e93a00;
+    background-color: rgb(26, 26, 52);
     width: 47px;
     position: absolute;
     top: 50%;
@@ -654,7 +670,7 @@ small:hover {
     display: block;
     height: 10px;
     width: 10px;
-    background-color: #e93a00;
+    background-color: rgb(26, 26, 52);
     float: left;
     border-radius: 50px;
     position: relative;
@@ -662,9 +678,10 @@ small:hover {
 }
 
 .portfolio {
-    background: #252a2e;
+    background: linear-gradient(to top, rgba(49, 34, 79, 0.8), rgba(41, 32, 78, 0.8)), url(/asset/imagenes/holograma.avif);
     color: #fff;
     padding: 50px 20px;
+    background-size: auto;
 
 }
 
@@ -674,7 +691,7 @@ small:hover {
 }
 
 .portfolio h2 {
-    font-size: 48px;
+    font-size: 80px;
     font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -713,11 +730,13 @@ small:hover {
     flex-direction: column;
     justify-content: center;
     transition: 1.5s;
-    font-size: 18px;
+    font-size: 22px;
     letter-spacing: 3px;
     opacity: 0;
-    color: #1cb698;
+    color: #fff;
     font-weight: bold;
+    text-shadow: 0px 0px 10px black;
+    
 }
 
 .portfolio .galeria .proyecto .overlay h3 {
@@ -736,7 +755,7 @@ small:hover {
 }
 
 .contacto {
-    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, .8)), url(/asset/imagenes/imagen3.jpg);
+    background: linear-gradient(to top, rgba(55, 43, 113, .8), rgba(55, 47, 113, 0.8)), url(/asset/imagenes/imagen3.jpg);
     background-size: cover;
     color: #fff;
     padding: 50px 0;
@@ -749,7 +768,7 @@ small:hover {
 }
 
 .contacto h2 {
-    font-size: 49px;
+    font-size: 80px;
     font-family: Oswald, sans-serif;
     text-align: center;
     padding: 20px 0;
@@ -774,7 +793,7 @@ small:hover {
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252a2e;
+    background: linear-gradient(to top, rgba(48, 44, 66, 0.8), rgba(43, 40, 63, 0.8)), url(/asset/imagenes/seccion2.jpg);
     color: #fff;
     font-size: 18px;
     border-radius: 5px;
@@ -805,9 +824,10 @@ small:hover {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: tomato;
+    background-color: rgb(218, 11, 60);
     z-index: -1;
     transition: 1s;
+    border-radius: 5px;
 }
 
 .contacto button:hover .overlay {
@@ -822,7 +842,7 @@ small:hover {
 .contacto .col .info {
     position: absolute;
     top: 40%;
-    background-color: #252a2e;
+    background: linear-gradient(to top, rgba(48, 44, 66, 0.8), rgba(43, 40, 63, 0.8)), url(/asset/imagenes/seccion2.jpg);
     padding: 20px;
     width: fit-content;
     left: 50%;
@@ -849,7 +869,7 @@ small:hover {
 }
 
 footer {
-    background: linear-gradient(to top, rgba(52, 61, 66, 0.8), rgba(58, 67, 73, 0.8)), url(/asset/imagenes/imagen4.jpg);
+    background: linear-gradient(to top, rgba(41, 38, 55, 0.8), rgba(42, 39, 64, 0.8)), url(/asset/imagenes/footer.jpeg);
     color: #fff;
     padding: 50px 0 30px 0;
     text-align: center;
@@ -881,7 +901,7 @@ footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
-    background-color: tomato;
+    background-color: rgb(218, 11, 60);
     color: #fff;
     position: absolute;
     left: 50%;
@@ -890,6 +910,11 @@ footer .arriba {
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
+}
+footer .arriba:hover{
+    box-shadow: 0px 0px 15px #fff;
+    transition: all 1s ease-in-out;
+
 }
 
 footer .copyrigh {
