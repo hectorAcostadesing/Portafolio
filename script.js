@@ -42,7 +42,15 @@ window.onscroll = function () {
 }
 //funcion header scroll
 
-window.addEventListener("scroll",function(){
+window.addEventListener("scroll",function() {
     let header = this.document.querySelector("header");
     header.classList.toggle("abajo",window.scrollY>0);
+})
+window.addEventListener("scroll",function() {
+    let redes = this.document.getElementById("redes");
+    redes.classList.toggle("abajo-redes",window.scrollY>0);
+})
+window.addEventListener("scroll",function() {
+    let img = this.document.getElementById("img");
+    img.classList.toggle("efect",window.scrollY>0);
 })
